@@ -1,0 +1,41 @@
+.deals {
+    width: 100%;
+    margin: auto;
+    background-color: #f7f5f6;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.deals h2 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.deals-section {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards {
+    text-align: center;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.cards p {
+    width: 75%;
+    text-align: justify;
+    margin: auto;
+    font-weight: 600;
+}
+
+.cards img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media screen and (max-width : 700px) {}

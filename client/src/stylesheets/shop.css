@@ -1,0 +1,44 @@
+.shop-div {
+    width: 80%;
+    margin: auto;
+}
+
+.shop-div h2 {
+    font-weight: 600;
+}
+
+.shop-div h2, p {
+    text-align: center;
+}
+
+.shop-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product{
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.product img {
+    height: 14rem;
+    width: 10rem;
+    object-fit: cover;
+}
+
+.shop-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+}
+
+.price del {
+    font-size: 0.7rem;
+    margin-right: 1rem;
+}
+
+.price b {
+    color: #ee445c;
+}

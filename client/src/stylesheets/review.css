@@ -1,0 +1,101 @@
+.review {
+    margin-top: 2rem;
+    background-color:  black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.review-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.review-info b {
+    font-size: 0.8rem;
+    color:  #e62743;
+    font-weight: 900;
+}
+
+.review-info h3 {
+    font-weight: 600;
+}
+
+.owl-theme {
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.owl-theme .item {
+    background-color: white;
+    color: black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.owl-theme .item p {
+    text-align: justify;
+}
+
+.customerImage-name {
+    display: flex;
+    justify-content: space-around;
+}
+
+.customer-review {
+  
+}
+
+.customerImage-name img {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 100%;
+}
+
+.customer-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.customer-detail p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width : 700px) {
+    .review {
+        flex-direction: column;
+    }
+
+    .owl-theme {
+        width: 100%;
+    }
+
+    .review-info {
+        width: 100%;
+    }
+
+    .customerImage-name img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .customer-detail {
+        height: 40px;
+    }
+
+    .owl-theme .item {
+        height: 15rem;
+    }
+}

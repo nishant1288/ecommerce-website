@@ -1,0 +1,7 @@
+style-page : https://w3layouts.com/template/shoppy-kart-a-multi-vendor-ecommerce-website-template/
+
+logo color and nav-items hover color : #ee445c
+
+button color : #e62743
+
+light color : #f7f5f6

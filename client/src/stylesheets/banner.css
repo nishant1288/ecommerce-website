@@ -1,0 +1,43 @@
+.banner {
+    height: 80vh;
+    width: 100%;
+    margin: 2rem auto;
+    background: url('../assets/banner2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.banner-btn {
+    width: 20%;
+    height: 3rem;
+    border: 1px solid #e62743;
+}
+
+@media screen and (max-width : 700px) {
+
+    .banner {
+        height: 50vh;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+        padding: 0.2rem;
+    }
+
+    .banner-btn {
+        width: 50%;
+    }
+}

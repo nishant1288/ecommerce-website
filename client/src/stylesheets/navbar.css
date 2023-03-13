@@ -1,0 +1,189 @@
+.navbar {
+    height: 5rem;
+    
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+    position: relative;
+}
+
+/* .logo,
+.nav-items,
+.nav-button {
+    border: 1px solid black;
+} */
+
+.logo {
+    width: 20%;
+}
+
+.logo h3 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0
+}
+
+.logo span {
+    color: #ee445c;
+}
+
+.nav-items {
+    width: 50%;
+}
+
+.nav-items ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0
+}
+
+.nav-items ul li {
+    list-style: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-items ul li:hover {
+    color: #ee445c;
+}
+
+.nav-button {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-button .btn {
+    width: 5rem;
+    background-color: #e62743;
+}
+
+.nav-button .btn:hover {
+    background-color: #ee445c;
+}
+
+.hamburgur {
+    display: none;
+}
+
+
+.fa-hand {
+    animation: rotation 2s infinite alternate-reverse;
+    transform-origin: bottom;
+    margin-left: 0.5rem;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(45deg);}
+    100% {transform: rotate(-45deg);}
+    
+}
+
+@media screen and (max-width : 700px) {
+
+    
+
+    .nav-items {
+        border-top: 1px solid #ee445c;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+        top: 5rem;
+        right: 0px;
+        width: 100%;
+      
+    }
+
+    .nav-items.active {
+        right: 1000px;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        background-color: white;
+    }
+
+    .nav-items ul li {
+        font-size: 1.35rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .nav-button {
+        position: absolute;
+        transition: all 1s ease-in-out;
+        top: 20rem;
+        width: 100%;
+        right: 0px;
+        background-color: white;
+        padding-bottom: 2rem;
+    }
+
+    .nav-button.active {
+        right: 1000px;
+    }
+
+    .nav-button .btn {
+        width: 10rem;
+        height: 2rem;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .logo h3 {
+        font-size: 2rem;
+    }
+
+    .hamburgur {
+        display: flex;
+        width: 9%;
+        height: 26px;
+        position: relative;
+    }
+
+    .hamburgur .lines {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: #ee445c;
+        border-radius: 5px;
+    }
+
+    .hamburgur .up {
+        top: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburgur .up.active {
+        top: 12px;
+        transform: rotate(45deg);
+    }
+
+    .hamburgur .mid {
+        top: 11.5px;
+        right: 0px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .hamburgur .mid.active {
+        right: 1000px;
+    }
+
+    .hamburgur .down {
+        top: 22px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburgur .down.active {
+        top: 13px;
+        transform: rotate(-45deg);
+    }
+
+
+}
